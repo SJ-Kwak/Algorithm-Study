@@ -4,13 +4,13 @@
 int main() {
 	int a[9];
 	int sum = 0;
-	// ÀÔ·Â
+	// ì…ë ¥
 	for (int i = 0; i < 9; i++) {
 		scanf("%d", &a[i]);		
 		sum += a[i];
 	}
 
-	// Á¤·Ä
+	// ì •ë ¬
 	for (int i = 0; i < 9; i++) {
 		for (int j = 0; j < 9 - i; j++) {
 			if (a[j] > a[j + 1]) {
@@ -20,7 +20,8 @@ int main() {
 			}
 		}
 	}
-
+	
+	// ë‚œìŸì´ ì°¾ê¸°
 	for (int i = 0; i < 8; i++) {
 		for (int j = 1; j < 9; j++) {
 			if (sum - a[i] - a[j] == 100) {
